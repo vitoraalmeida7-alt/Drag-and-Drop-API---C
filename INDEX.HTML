@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoGame - Desafio dos Continentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌎 GeoGame</h1>
+        <h2>Desafio dos Continentes</h2>
+        <p>Arraste cada país para o continente correto!</p>
+    </header>
+
+    <main>
+        <section class="placar">
+            <div>⭐ Pontos: <span id="pontos">0</span></div>
+            <div>✅ Acertos: <span id="acertos">0</span>/12</div>
+            <div>🎯 Restantes: <span id="restantes">12</span></div>
+        </section>
+
+        <h2>1. Escolha um país</h2>
+        <div id="paises" class="paises"></div>
+
+        <h2>2. Solte no continente correto</h2>
+        <div class="continentes">
+
+            <div class="continente" data-continente="America">
+                <h3>🌎 América</h3>
+                <div class="respostas"></div>
+            </div>
+
+            <div class="continente" data-continente="Europa">
+                <h3>🏰 Europa</h3>
+                <div class="respostas"></div>
+            </div>
+
+            <div class="continente" data-continente="Africa">
+                <h3>🦁 África</h3>
+                <div class="respostas"></div>
+            </div>
+
+            <div class="continente" data-continente="Asia">
+                <h3>⛩️ Ásia</h3>
+                <div class="respostas"></div>
+            </div>
+
+            <div class="continente" data-continente="Oceania">
+                <h3>🦘 Oceania</h3>
+                <div class="respostas"></div>
+            </div>
+
+            <div class="continente" data-continente="Antartida">
+                <h3>❄️ Antártida</h3>
+                <div class="respostas"></div>
+            </div>
+
+        </div>
+
+        <div id="mensagem" class="mensagem">
+            Vamos jogar! Arraste um país para o continente correto.
+        </div>
+
+        <button id="reiniciar">🔄 Reiniciar jogo</button>
+    </main>
+
+    <footer>
+        Atividade de Programação Front-End
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
